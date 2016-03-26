@@ -13,14 +13,18 @@
 @property (nonatomic, strong) NSNumber *patientID;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSNumber *age;
+@property (nonatomic, strong) NSNumber *isMale;
 @property (nonatomic, strong) NSString *notes;
 @property (nonatomic, strong) NSDictionary *notableHealthIssues;
 
 + (Patient *)createPatientWithID:(NSNumber *) patientID
                             name:(NSString *) name
                              age:(NSNumber *) age
+                          isMale:(NSNumber *) isMale
                            notes:(NSString *) notes
              notableHealthIssues:(NSDictionary *) notableHealthIssues;
+
+- (NSString *) getFormattedStringForHealth;
 
 
 @end

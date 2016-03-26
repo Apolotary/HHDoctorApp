@@ -15,6 +15,7 @@
 
 + (id)sharedManager;
 
+// should actually return a patient but assigns the main patient for now
 - (void)getPatientForID:(NSNumber *)patientID;
 
 

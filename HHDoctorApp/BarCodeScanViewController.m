@@ -7,6 +7,7 @@
 //
 
 #import "BarCodeScanViewController.h"
+#import "PatientDataManager.h"
 
 @interface BarCodeScanViewController ()
 
@@ -31,6 +32,9 @@
 - (void)tapGestureRecognized:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:^{
+        
+        [[PatientDataManager sharedManager] getPatientForID:@123];
+        
         [_delegate scanCompleteWithResult:YES];
     }];
 }

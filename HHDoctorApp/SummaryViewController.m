@@ -11,6 +11,13 @@
 #import "BarCodeScanViewController.h"
 
 @interface SummaryViewController () <BarCodeScanProtocol>
+{
+    IBOutlet UILabel *_labelName;
+    IBOutlet UILabel *_labelAge;
+    IBOutlet UILabel *_labelSex;
+    IBOutlet UITextView *_textViewNotes;
+    IBOutlet UITextView *_textViewHealth;
+}
 
 @end
 
@@ -52,7 +59,13 @@
 
 - (void)outputPatientData
 {
+    Patient *patient =[[PatientDataManager sharedManager] mainPatient];
     
+    [_labelName setText:patient.name];
+    [_labelAge setText:[NSString stringWithFormat:@"%@", patient.age]];
+    [_labelSex setText:[NSString stringWithFormat:@"%@", patient.isMale ? @"Male" : @"Female"]];
+    [_textViewNotes setText:patient.notes];
+    [_textViewHealth setText:patient.getFormattedStringForHealth];
 }
 
 #pragma mark - BarCodeScanVC protocol
