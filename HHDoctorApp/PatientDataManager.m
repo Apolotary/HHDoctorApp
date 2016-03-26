@@ -29,12 +29,12 @@
     return self;
 }
 
-- (Patient *)getPatientForID:(NSNumber *)patientID
+- (void)getPatientForID:(NSNumber *)patientID
 {
     // Dummy data code for now
     
     Patient *returnPatient = [Patient createPatientWithID:[NSNumber numberWithInt:123] name:@"Suzuki Taro" age:@23 notes:@"Specific notes here" notableHealthIssues:@{@"diabetes" : @NO, @"hypertension" : @YES, @"asthma" : @NO}];
-    return returnPatient;
+    _mainPatient = returnPatient;
 }
 
 

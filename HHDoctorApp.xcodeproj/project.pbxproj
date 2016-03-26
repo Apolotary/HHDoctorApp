@@ -18,10 +18,10 @@
 		0A2256291CA72A9400D47850 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2256281CA72A9400D47850 /* MoreViewController.m */; };
 		0A22562D1CA72AEC00D47850 /* MonitoringTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A22562B1CA72AEC00D47850 /* MonitoringTableViewCell.m */; };
 		0A22562E1CA72AEC00D47850 /* MonitoringTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A22562C1CA72AEC00D47850 /* MonitoringTableViewCell.xib */; };
-		0A2256311CA72B1500D47850 /* BarCodeScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2256301CA72B1500D47850 /* BarCodeScanView.m */; };
 		0A2256351CA72C2600D47850 /* PatientDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2256341CA72C2600D47850 /* PatientDataManager.m */; };
 		0A2256381CA72C3100D47850 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2256371CA72C3100D47850 /* Patient.m */; };
-		0A22563A1CA7306700D47850 /* BarCodeScanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2256391CA7306700D47850 /* BarCodeScanView.xib */; };
+		0A22563D1CA731C200D47850 /* qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A22563C1CA731C200D47850 /* qrcode.png */; };
+		0A2256401CA7327600D47850 /* BarCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A22563F1CA7327600D47850 /* BarCodeScanViewController.m */; };
 		5BC486A90855D139A472CFAC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6A133284082754FC48DA69 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,13 +45,13 @@
 		0A22562A1CA72AEC00D47850 /* MonitoringTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitoringTableViewCell.h; sourceTree = "<group>"; };
 		0A22562B1CA72AEC00D47850 /* MonitoringTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitoringTableViewCell.m; sourceTree = "<group>"; };
 		0A22562C1CA72AEC00D47850 /* MonitoringTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonitoringTableViewCell.xib; sourceTree = "<group>"; };
-		0A22562F1CA72B1500D47850 /* BarCodeScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeScanView.h; sourceTree = "<group>"; };
-		0A2256301CA72B1500D47850 /* BarCodeScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeScanView.m; sourceTree = "<group>"; };
 		0A2256331CA72C2600D47850 /* PatientDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientDataManager.h; sourceTree = "<group>"; };
 		0A2256341CA72C2600D47850 /* PatientDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientDataManager.m; sourceTree = "<group>"; };
 		0A2256361CA72C3100D47850 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
 		0A2256371CA72C3100D47850 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
-		0A2256391CA7306700D47850 /* BarCodeScanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarCodeScanView.xib; sourceTree = "<group>"; };
+		0A22563C1CA731C200D47850 /* qrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qrcode.png; sourceTree = "<group>"; };
+		0A22563E1CA7327600D47850 /* BarCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeScanViewController.h; sourceTree = "<group>"; };
+		0A22563F1CA7327600D47850 /* BarCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeScanViewController.m; sourceTree = "<group>"; };
 		77FE235A33A1BCF7BAEC3E16 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7A6A133284082754FC48DA69 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D1660A9B995DA593A1F4CA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +124,8 @@
 				0A2256251CA72A7B00D47850 /* HappinessViewController.m */,
 				0A2256271CA72A9400D47850 /* MoreViewController.h */,
 				0A2256281CA72A9400D47850 /* MoreViewController.m */,
+				0A22563E1CA7327600D47850 /* BarCodeScanViewController.h */,
+				0A22563F1CA7327600D47850 /* BarCodeScanViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -134,9 +136,6 @@
 				0A22562A1CA72AEC00D47850 /* MonitoringTableViewCell.h */,
 				0A22562B1CA72AEC00D47850 /* MonitoringTableViewCell.m */,
 				0A22562C1CA72AEC00D47850 /* MonitoringTableViewCell.xib */,
-				0A22562F1CA72B1500D47850 /* BarCodeScanView.h */,
-				0A2256301CA72B1500D47850 /* BarCodeScanView.m */,
-				0A2256391CA7306700D47850 /* BarCodeScanView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -155,6 +154,7 @@
 		0A22563B1CA7319000D47850 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0A22563C1CA731C200D47850 /* qrcode.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -237,8 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A01132F1CA6C91B00E5B0F8 /* LaunchScreen.storyboard in Resources */,
+				0A22563D1CA731C200D47850 /* qrcode.png in Resources */,
 				0A22562E1CA72AEC00D47850 /* MonitoringTableViewCell.xib in Resources */,
-				0A22563A1CA7306700D47850 /* BarCodeScanView.xib in Resources */,
 				0A01132C1CA6C91B00E5B0F8 /* Assets.xcassets in Resources */,
 				0A01132A1CA6C91B00E5B0F8 /* Main.storyboard in Resources */,
 			);
@@ -302,8 +302,8 @@
 				0A2256231CA72A7200D47850 /* MonitoringViewController.m in Sources */,
 				0A2256261CA72A7B00D47850 /* HappinessViewController.m in Sources */,
 				0A0113211CA6C91B00E5B0F8 /* AppDelegate.m in Sources */,
+				0A2256401CA7327600D47850 /* BarCodeScanViewController.m in Sources */,
 				0A01131E1CA6C91B00E5B0F8 /* main.m in Sources */,
-				0A2256311CA72B1500D47850 /* BarCodeScanView.m in Sources */,
 				0A2256351CA72C2600D47850 /* PatientDataManager.m in Sources */,
 				0A22562D1CA72AEC00D47850 /* MonitoringTableViewCell.m in Sources */,
 				0A2256381CA72C3100D47850 /* Patient.m in Sources */,

@@ -11,9 +11,11 @@
 
 @interface PatientDataManager : NSObject
 
+@property (nonatomic, strong) Patient *mainPatient;
+
 + (id)sharedManager;
 
-- (Patient *)getPatientForID:(NSNumber *)patientID;
+- (void)getPatientForID:(NSNumber *)patientID;
 
 
 @end

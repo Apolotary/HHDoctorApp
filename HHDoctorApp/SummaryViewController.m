@@ -7,24 +7,62 @@
 //
 
 #import "SummaryViewController.h"
+#import "PatientDataManager.h"
+#import "BarCodeScanViewController.h"
 
-@interface SummaryViewController ()
-{
-    BOOL _isPatientDataAvailable;
-}
+@interface SummaryViewController () <BarCodeScanProtocol>
 
 @end
 
 @implementation SummaryViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    if (![[PatientDataManager sharedManager] mainPatient])
+    {
+        [self performSelector:@selector(showBarCodeScanVC) withObject:nil afterDelay:0.0];
+
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ShowBarCodeScanVC"])
+    {
+        BarCodeScanViewController *barCodeScanVC = (BarCodeScanViewController *)segue.destinationViewController;
+        barCodeScanVC.delegate = self;
+    }
+}
+
+#pragma mark - Bar Code scan segue
+
+- (void)showBarCodeScanVC
+{
+    [self performSegueWithIdentifier:@"ShowBarCodeScanVC" sender:self];
+}
+
+#pragma mark - Outputting patient data
+
+- (void)outputPatientData
+{
+    
+}
+
+#pragma mark - BarCodeScanVC protocol
+
+- (void)scanCompleteWithResult:(BOOL)success
+{
+    if (success)
+    {
+        [self outputPatientData];
+    }
 }
 
 /*
