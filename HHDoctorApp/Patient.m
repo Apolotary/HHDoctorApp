@@ -7,6 +7,7 @@
 //
 
 #import "Patient.h"
+#import "MonitoringDataContainer.h"
 
 @implementation Patient
 
@@ -73,7 +74,12 @@
 
 - (void)createMonitoringData
 {
-    
+    MonitoringDataContainer *bloodSugarLevels = [MonitoringDataContainer containerWithName:@"Blood Sugar" unit:@"mg/dl" borders:@{@"low":@0, @"high": @200} data:@[@70, @100, @110, @80, @90, @120, @95, @105]];
+    MonitoringDataContainer *sleepTimeLevels = [MonitoringDataContainer containerWithName:@"Sleep Time" unit:@"hrs" borders:@{@"low" : @0, @"high": @24} data:@[@3, @5, @8, @7, @4, @5, @6]];
+    MonitoringDataContainer *caloricIntakeLevels = [MonitoringDataContainer containerWithName:@"Caloric Intake" unit:@"kcal" borders:@{@"low" : @0, @"high": @5000} data:@[@1800, @2000, @1500, @3000, @4000, @2000, @1200]];
+    MonitoringDataContainer *stepsMade = [MonitoringDataContainer containerWithName:@"Steps Made" unit:@"steps" borders:@{@"low" : @0, @"high": @30000} data:@[@2000, @8000, @5000, @20000, @10000, @4000, @8000]];
+    MonitoringDataContainer *heartRate = [MonitoringDataContainer containerWithName:@"Heart Rate" unit:@"bpm" borders:@{@"low" : @60, @"high": @250} data:@[@90, @90, @120, @90, @110, @90, @120]];
+    MonitoringDataContainer *hoursWorking = [MonitoringDataContainer containerWithName:@"Working hours" unit:@"hrs" borders:@{@"low" : @0, @"high": @24} data:@[@8, @5, @10, @6, @8, @4, @2]];
     
     
 }
