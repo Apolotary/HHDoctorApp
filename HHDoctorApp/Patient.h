@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSNumber *isMale;
 @property (nonatomic, strong) NSString *notes;
 @property (nonatomic, strong) NSDictionary *notableHealthIssues;
+@property (nonatomic, strong) NSArray *monitoringData;
 
 + (Patient *)createPatientWithID:(NSNumber *) patientID
                             name:(NSString *) name
@@ -24,7 +25,8 @@
                            notes:(NSString *) notes
              notableHealthIssues:(NSDictionary *) notableHealthIssues;
 
-- (NSString *) getFormattedStringForHealth;
+- (NSString *)getFormattedStringForHealth;
 
+- (void)createMonitoringData;
 
 @end

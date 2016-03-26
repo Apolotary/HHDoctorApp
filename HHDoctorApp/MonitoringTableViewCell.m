@@ -8,6 +8,13 @@
 
 #import "MonitoringTableViewCell.h"
 
+@interface MonitoringTableViewCell ()
+{
+    
+}
+
+@end
+
 @implementation MonitoringTableViewCell
 
 - (void)awakeFromNib {

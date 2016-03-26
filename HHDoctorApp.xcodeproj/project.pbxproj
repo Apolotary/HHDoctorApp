@@ -23,6 +23,7 @@
 		0A22563D1CA731C200D47850 /* qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A22563C1CA731C200D47850 /* qrcode.png */; };
 		0A2256401CA7327600D47850 /* BarCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A22563F1CA7327600D47850 /* BarCodeScanViewController.m */; };
 		0A2256421CA73D1F00D47850 /* no-user-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A2256411CA73D1F00D47850 /* no-user-image.jpg */; };
+		0A2256451CA74EE500D47850 /* MonitoringDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2256441CA74EE500D47850 /* MonitoringDataContainer.m */; };
 		5BC486A90855D139A472CFAC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6A133284082754FC48DA69 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,8 @@
 		0A22563E1CA7327600D47850 /* BarCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeScanViewController.h; sourceTree = "<group>"; };
 		0A22563F1CA7327600D47850 /* BarCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeScanViewController.m; sourceTree = "<group>"; };
 		0A2256411CA73D1F00D47850 /* no-user-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "no-user-image.jpg"; sourceTree = "<group>"; };
+		0A2256431CA74EE500D47850 /* MonitoringDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitoringDataContainer.h; sourceTree = "<group>"; };
+		0A2256441CA74EE500D47850 /* MonitoringDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitoringDataContainer.m; sourceTree = "<group>"; };
 		77FE235A33A1BCF7BAEC3E16 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7A6A133284082754FC48DA69 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D1660A9B995DA593A1F4CA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 				0A2256341CA72C2600D47850 /* PatientDataManager.m */,
 				0A2256361CA72C3100D47850 /* Patient.h */,
 				0A2256371CA72C3100D47850 /* Patient.m */,
+				0A2256431CA74EE500D47850 /* MonitoringDataContainer.h */,
+				0A2256441CA74EE500D47850 /* MonitoringDataContainer.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				0A2256381CA72C3100D47850 /* Patient.m in Sources */,
 				0A2256291CA72A9400D47850 /* MoreViewController.m in Sources */,
 				0A2256201CA72A6600D47850 /* SummaryViewController.m in Sources */,
+				0A2256451CA74EE500D47850 /* MonitoringDataContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
