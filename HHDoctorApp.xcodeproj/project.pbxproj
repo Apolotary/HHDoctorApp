@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		0A01131E1CA6C91B00E5B0F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A01131D1CA6C91B00E5B0F8 /* main.m */; };
 		0A0113211CA6C91B00E5B0F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0113201CA6C91B00E5B0F8 /* AppDelegate.m */; };
-		0A0113241CA6C91B00E5B0F8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0113231CA6C91B00E5B0F8 /* FirstViewController.m */; };
-		0A0113271CA6C91B00E5B0F8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0113261CA6C91B00E5B0F8 /* SecondViewController.m */; };
 		0A01132A1CA6C91B00E5B0F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0113281CA6C91B00E5B0F8 /* Main.storyboard */; };
 		0A01132C1CA6C91B00E5B0F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A01132B1CA6C91B00E5B0F8 /* Assets.xcassets */; };
 		0A01132F1CA6C91B00E5B0F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A01132D1CA6C91B00E5B0F8 /* LaunchScreen.storyboard */; };
+		0A2256201CA72A6600D47850 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A22561F1CA72A6600D47850 /* SummaryViewController.m */; };
+		0A2256231CA72A7200D47850 /* MonitoringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2256221CA72A7200D47850 /* MonitoringViewController.m */; };
+		0A2256261CA72A7B00D47850 /* HappinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2256251CA72A7B00D47850 /* HappinessViewController.m */; };
+		0A2256291CA72A9400D47850 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2256281CA72A9400D47850 /* MoreViewController.m */; };
+		0A22562D1CA72AEC00D47850 /* MonitoringTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A22562B1CA72AEC00D47850 /* MonitoringTableViewCell.m */; };
+		0A22562E1CA72AEC00D47850 /* MonitoringTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A22562C1CA72AEC00D47850 /* MonitoringTableViewCell.xib */; };
+		0A2256311CA72B1500D47850 /* BarCodeScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2256301CA72B1500D47850 /* BarCodeScanView.m */; };
+		0A2256351CA72C2600D47850 /* PatientDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2256341CA72C2600D47850 /* PatientDataManager.m */; };
+		0A2256381CA72C3100D47850 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2256371CA72C3100D47850 /* Patient.m */; };
+		0A22563A1CA7306700D47850 /* BarCodeScanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2256391CA7306700D47850 /* BarCodeScanView.xib */; };
+		5BC486A90855D139A472CFAC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6A133284082754FC48DA69 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +30,31 @@
 		0A01131D1CA6C91B00E5B0F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A01131F1CA6C91B00E5B0F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A0113201CA6C91B00E5B0F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A0113221CA6C91B00E5B0F8 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		0A0113231CA6C91B00E5B0F8 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		0A0113251CA6C91B00E5B0F8 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		0A0113261CA6C91B00E5B0F8 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		0A0113291CA6C91B00E5B0F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A01132B1CA6C91B00E5B0F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A01132E1CA6C91B00E5B0F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A0113301CA6C91B00E5B0F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A22561E1CA72A6600D47850 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
+		0A22561F1CA72A6600D47850 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
+		0A2256211CA72A7200D47850 /* MonitoringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitoringViewController.h; sourceTree = "<group>"; };
+		0A2256221CA72A7200D47850 /* MonitoringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitoringViewController.m; sourceTree = "<group>"; };
+		0A2256241CA72A7B00D47850 /* HappinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HappinessViewController.h; sourceTree = "<group>"; };
+		0A2256251CA72A7B00D47850 /* HappinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HappinessViewController.m; sourceTree = "<group>"; };
+		0A2256271CA72A9400D47850 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		0A2256281CA72A9400D47850 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		0A22562A1CA72AEC00D47850 /* MonitoringTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitoringTableViewCell.h; sourceTree = "<group>"; };
+		0A22562B1CA72AEC00D47850 /* MonitoringTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitoringTableViewCell.m; sourceTree = "<group>"; };
+		0A22562C1CA72AEC00D47850 /* MonitoringTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonitoringTableViewCell.xib; sourceTree = "<group>"; };
+		0A22562F1CA72B1500D47850 /* BarCodeScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeScanView.h; sourceTree = "<group>"; };
+		0A2256301CA72B1500D47850 /* BarCodeScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeScanView.m; sourceTree = "<group>"; };
+		0A2256331CA72C2600D47850 /* PatientDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientDataManager.h; sourceTree = "<group>"; };
+		0A2256341CA72C2600D47850 /* PatientDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientDataManager.m; sourceTree = "<group>"; };
+		0A2256361CA72C3100D47850 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		0A2256371CA72C3100D47850 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		0A2256391CA7306700D47850 /* BarCodeScanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarCodeScanView.xib; sourceTree = "<group>"; };
+		77FE235A33A1BCF7BAEC3E16 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7A6A133284082754FC48DA69 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D1660A9B995DA593A1F4CA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC486A90855D139A472CFAC /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +74,8 @@
 			children = (
 				0A01131B1CA6C91B00E5B0F8 /* HHDoctorApp */,
 				0A01131A1CA6C91B00E5B0F8 /* Products */,
+				3727E831D6C7885662D8EEB1 /* Pods */,
+				FBDBAECAE1405C247865EA66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,12 +90,11 @@
 		0A01131B1CA6C91B00E5B0F8 /* HHDoctorApp */ = {
 			isa = PBXGroup;
 			children = (
+				0A2256321CA72C0300D47850 /* Model */,
+				0A22561A1CA72A0A00D47850 /* Views */,
+				0A2256191CA729FF00D47850 /* ViewControllers */,
 				0A01131F1CA6C91B00E5B0F8 /* AppDelegate.h */,
 				0A0113201CA6C91B00E5B0F8 /* AppDelegate.m */,
-				0A0113221CA6C91B00E5B0F8 /* FirstViewController.h */,
-				0A0113231CA6C91B00E5B0F8 /* FirstViewController.m */,
-				0A0113251CA6C91B00E5B0F8 /* SecondViewController.h */,
-				0A0113261CA6C91B00E5B0F8 /* SecondViewController.m */,
 				0A0113281CA6C91B00E5B0F8 /* Main.storyboard */,
 				0A01132B1CA6C91B00E5B0F8 /* Assets.xcassets */,
 				0A01132D1CA6C91B00E5B0F8 /* LaunchScreen.storyboard */,
@@ -79,9 +107,73 @@
 		0A01131C1CA6C91B00E5B0F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A22563B1CA7319000D47850 /* Images */,
 				0A01131D1CA6C91B00E5B0F8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A2256191CA729FF00D47850 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A22561E1CA72A6600D47850 /* SummaryViewController.h */,
+				0A22561F1CA72A6600D47850 /* SummaryViewController.m */,
+				0A2256211CA72A7200D47850 /* MonitoringViewController.h */,
+				0A2256221CA72A7200D47850 /* MonitoringViewController.m */,
+				0A2256241CA72A7B00D47850 /* HappinessViewController.h */,
+				0A2256251CA72A7B00D47850 /* HappinessViewController.m */,
+				0A2256271CA72A9400D47850 /* MoreViewController.h */,
+				0A2256281CA72A9400D47850 /* MoreViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0A22561A1CA72A0A00D47850 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A22562A1CA72AEC00D47850 /* MonitoringTableViewCell.h */,
+				0A22562B1CA72AEC00D47850 /* MonitoringTableViewCell.m */,
+				0A22562C1CA72AEC00D47850 /* MonitoringTableViewCell.xib */,
+				0A22562F1CA72B1500D47850 /* BarCodeScanView.h */,
+				0A2256301CA72B1500D47850 /* BarCodeScanView.m */,
+				0A2256391CA7306700D47850 /* BarCodeScanView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0A2256321CA72C0300D47850 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A2256331CA72C2600D47850 /* PatientDataManager.h */,
+				0A2256341CA72C2600D47850 /* PatientDataManager.m */,
+				0A2256361CA72C3100D47850 /* Patient.h */,
+				0A2256371CA72C3100D47850 /* Patient.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0A22563B1CA7319000D47850 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		3727E831D6C7885662D8EEB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2D1660A9B995DA593A1F4CA /* Pods.debug.xcconfig */,
+				77FE235A33A1BCF7BAEC3E16 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FBDBAECAE1405C247865EA66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A6A133284082754FC48DA69 /* Pods.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A0113331CA6C91B00E5B0F8 /* Build configuration list for PBXNativeTarget "HHDoctorApp" */;
 			buildPhases = (
+				9E5DE55AE4DA285A09750DDB /* Check Pods Manifest.lock */,
 				0A0113151CA6C91B00E5B0F8 /* Sources */,
 				0A0113161CA6C91B00E5B0F8 /* Frameworks */,
 				0A0113171CA6C91B00E5B0F8 /* Resources */,
+				996047895DC281914CD9B224 /* Embed Pods Frameworks */,
+				4E1A25D0AA051F86B22B4241 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A01132F1CA6C91B00E5B0F8 /* LaunchScreen.storyboard in Resources */,
+				0A22562E1CA72AEC00D47850 /* MonitoringTableViewCell.xib in Resources */,
+				0A22563A1CA7306700D47850 /* BarCodeScanView.xib in Resources */,
 				0A01132C1CA6C91B00E5B0F8 /* Assets.xcassets in Resources */,
 				0A01132A1CA6C91B00E5B0F8 /* Main.storyboard in Resources */,
 			);
@@ -149,15 +246,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E1A25D0AA051F86B22B4241 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		996047895DC281914CD9B224 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E5DE55AE4DA285A09750DDB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A0113151CA6C91B00E5B0F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A0113271CA6C91B00E5B0F8 /* SecondViewController.m in Sources */,
+				0A2256231CA72A7200D47850 /* MonitoringViewController.m in Sources */,
+				0A2256261CA72A7B00D47850 /* HappinessViewController.m in Sources */,
 				0A0113211CA6C91B00E5B0F8 /* AppDelegate.m in Sources */,
-				0A0113241CA6C91B00E5B0F8 /* FirstViewController.m in Sources */,
 				0A01131E1CA6C91B00E5B0F8 /* main.m in Sources */,
+				0A2256311CA72B1500D47850 /* BarCodeScanView.m in Sources */,
+				0A2256351CA72C2600D47850 /* PatientDataManager.m in Sources */,
+				0A22562D1CA72AEC00D47850 /* MonitoringTableViewCell.m in Sources */,
+				0A2256381CA72C3100D47850 /* Patient.m in Sources */,
+				0A2256291CA72A9400D47850 /* MoreViewController.m in Sources */,
+				0A2256201CA72A6600D47850 /* SummaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +416,7 @@
 		};
 		0A0113341CA6C91B00E5B0F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D1660A9B995DA593A1F4CA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HHDoctorApp/Info.plist;
@@ -276,6 +428,7 @@
 		};
 		0A0113351CA6C91B00E5B0F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77FE235A33A1BCF7BAEC3E16 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HHDoctorApp/Info.plist;
@@ -304,6 +457,7 @@
 				0A0113351CA6C91B00E5B0F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
