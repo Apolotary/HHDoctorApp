@@ -9,6 +9,9 @@
 #import "MoreViewController.h"
 
 @interface MoreViewController ()
+{
+    
+}
 
 @end
 

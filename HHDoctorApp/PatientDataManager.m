@@ -35,6 +35,7 @@
     
     Patient *returnPatient = [Patient createPatientWithID:[NSNumber numberWithInt:123] name:@"Suzuki Taro" age:@23 isMale:@YES notes:@"Specific notes here" notableHealthIssues:@{@"diabetes" : @NO, @"hypertension" : @YES, @"asthma" : @YES}];
     _mainPatient = returnPatient;
+    [self createMonitoringData];
 }
 
 - (void)createMonitoringData
