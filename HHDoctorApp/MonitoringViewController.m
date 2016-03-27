@@ -7,21 +7,65 @@
 //
 
 #import "MonitoringViewController.h"
+#import "MonitoringTableViewCell.h"
+#import "PatientDataManager.h"
 
-@interface MonitoringViewController ()
+static NSString *CellIdentifier = @"CellIdentifier";
+
+@interface MonitoringViewController () <UITableViewDelegate, UITableViewDataSource>
+{
+    IBOutlet UITableView *_tableView;
+    NSArray *_monitoringData;
+}
+
 
 @end
 
 @implementation MonitoringViewController
 
+#pragma mark - View Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [[PatientDataManager sharedManager] createMonitoringData];
+    _monitoringData = [[[PatientDataManager sharedManager] mainPatient] monitoringData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UITableViewDelegate
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _monitoringData.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MonitoringTableViewCell *cell = (MonitoringTableViewCell *) [_tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if(!cell)
+    {
+        NSArray *nibArray = [[NSBundle mainBundle] loadNibNamed:@"MonitoringTableViewCell" owner:nil options:nil];
+        
+        for (id obj in nibArray)
+        {
+            if ([obj isKindOfClass:[MonitoringTableViewCell class]])
+            {
+                cell = (MonitoringTableViewCell *)obj;
+                break;
+            }
+        }
+    }
+    
+    [cell setupCellWithMonitoringData:_monitoringData[indexPath.row]];
+    
+    return cell;
 }
 
 /*

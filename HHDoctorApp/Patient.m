@@ -81,7 +81,7 @@
     MonitoringDataContainer *heartRate = [MonitoringDataContainer containerWithName:@"Heart Rate" unit:@"bpm" borders:@{@"low" : @60, @"high": @250} data:@[@90, @90, @120, @90, @110, @90, @120]];
     MonitoringDataContainer *hoursWorking = [MonitoringDataContainer containerWithName:@"Working hours" unit:@"hrs" borders:@{@"low" : @0, @"high": @24} data:@[@8, @5, @10, @6, @8, @4, @2]];
     
-    
+    _monitoringData = @[bloodSugarLevels, sleepTimeLevels, caloricIntakeLevels, stepsMade, heartRate, hoursWorking];
 }
 
 @end

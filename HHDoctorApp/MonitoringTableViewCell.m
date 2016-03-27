@@ -10,22 +10,33 @@
 
 @interface MonitoringTableViewCell ()
 {
-    
+    IBOutlet UILabel *_nameLabel;
+    IBOutlet UIView *_chartView;
 }
 
 @end
 
 @implementation MonitoringTableViewCell
 
-- (void)awakeFromNib {
+#pragma mark - Cell methods
+
+- (void)awakeFromNib
+{
     [super awakeFromNib];
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
     [super setSelected:selected animated:animated];
-
     // Configure the view for the selected state
+}
+
+#pragma mark - Setting up the cell
+
+- (void)setupCellWithMonitoringData:(MonitoringDataContainer *)container
+{
+    [_nameLabel setText:[NSString stringWithFormat:@"%@ - %@", container.name, container.unit]];
 }
 
 @end

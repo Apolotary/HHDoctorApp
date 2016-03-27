@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MonitoringDataContainer.h"
 
 @interface MonitoringTableViewCell : UITableViewCell
+
+- (void)setupCellWithMonitoringData:(MonitoringDataContainer *)container;
 
 @end

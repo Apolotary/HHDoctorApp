@@ -37,5 +37,9 @@
     _mainPatient = returnPatient;
 }
 
+- (void)createMonitoringData
+{
+    [_mainPatient createMonitoringData];
+}
 
 @end
