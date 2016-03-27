@@ -24,6 +24,10 @@
 		0A2256401CA7327600D47850 /* BarCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A22563F1CA7327600D47850 /* BarCodeScanViewController.m */; };
 		0A2256421CA73D1F00D47850 /* no-user-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A2256411CA73D1F00D47850 /* no-user-image.jpg */; };
 		0A2256451CA74EE500D47850 /* MonitoringDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2256441CA74EE500D47850 /* MonitoringDataContainer.m */; };
+		0A45AEE81CA78714002DB043 /* happy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A45AEE41CA78714002DB043 /* happy@2x.png */; };
+		0A45AEE91CA78714002DB043 /* monitoring@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A45AEE51CA78714002DB043 /* monitoring@2x.png */; };
+		0A45AEEA1CA78714002DB043 /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A45AEE61CA78714002DB043 /* more@2x.png */; };
+		0A45AEEB1CA78714002DB043 /* summary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A45AEE71CA78714002DB043 /* summary@2x.png */; };
 		0A94D3FD1CA765630063758E /* SwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94D3FC1CA765630063758E /* SwiftTest.swift */; };
 		0A94D47E1CA765750063758E /* ChartAnimationEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94D4001CA765750063758E /* ChartAnimationEasing.swift */; };
 		0A94D47F1CA765750063758E /* ChartAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94D4011CA765750063758E /* ChartAnimator.swift */; };
@@ -170,6 +174,10 @@
 		0A2256411CA73D1F00D47850 /* no-user-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "no-user-image.jpg"; sourceTree = "<group>"; };
 		0A2256431CA74EE500D47850 /* MonitoringDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitoringDataContainer.h; sourceTree = "<group>"; };
 		0A2256441CA74EE500D47850 /* MonitoringDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitoringDataContainer.m; sourceTree = "<group>"; };
+		0A45AEE41CA78714002DB043 /* happy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "happy@2x.png"; sourceTree = "<group>"; };
+		0A45AEE51CA78714002DB043 /* monitoring@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monitoring@2x.png"; sourceTree = "<group>"; };
+		0A45AEE61CA78714002DB043 /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@2x.png"; sourceTree = "<group>"; };
+		0A45AEE71CA78714002DB043 /* summary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "summary@2x.png"; sourceTree = "<group>"; };
 		0A94D3FB1CA765630063758E /* HHDoctorApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHDoctorApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A94D3FC1CA765630063758E /* SwiftTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTest.swift; sourceTree = "<group>"; };
 		0A94D4001CA765750063758E /* ChartAnimationEasing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartAnimationEasing.swift; sourceTree = "<group>"; };
@@ -386,6 +394,10 @@
 		0A22563B1CA7319000D47850 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0A45AEE41CA78714002DB043 /* happy@2x.png */,
+				0A45AEE51CA78714002DB043 /* monitoring@2x.png */,
+				0A45AEE61CA78714002DB043 /* more@2x.png */,
+				0A45AEE71CA78714002DB043 /* summary@2x.png */,
 				0A2256411CA73D1F00D47850 /* no-user-image.jpg */,
 				0A22563C1CA731C200D47850 /* qrcode.png */,
 			);
@@ -706,12 +718,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A45AEEA1CA78714002DB043 /* more@2x.png in Resources */,
 				0A01132F1CA6C91B00E5B0F8 /* LaunchScreen.storyboard in Resources */,
 				0A22563D1CA731C200D47850 /* qrcode.png in Resources */,
+				0A45AEEB1CA78714002DB043 /* summary@2x.png in Resources */,
 				0A22562E1CA72AEC00D47850 /* MonitoringTableViewCell.xib in Resources */,
 				0A01132C1CA6C91B00E5B0F8 /* Assets.xcassets in Resources */,
+				0A45AEE91CA78714002DB043 /* monitoring@2x.png in Resources */,
 				0A01132A1CA6C91B00E5B0F8 /* Main.storyboard in Resources */,
 				0A2256421CA73D1F00D47850 /* no-user-image.jpg in Resources */,
+				0A45AEE81CA78714002DB043 /* happy@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

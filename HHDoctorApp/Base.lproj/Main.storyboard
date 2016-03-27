@@ -65,7 +65,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Summary" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Summary" image="summary.png" id="acW-dT-cKf"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="_labelAge" destination="idS-5x-nre" id="vxG-N2-9xJ"/>
@@ -133,7 +133,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Monitoring" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Monitoring" image="monitoring.png" id="cPa-gy-q4n"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="_tableView" destination="cHk-XC-2re" id="qhB-9D-gfW"/>
@@ -162,7 +162,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="More" id="WaY-Sp-THB"/>
+                    <tabBarItem key="tabBarItem" title="More" image="more.png" id="WaY-Sp-THB"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1J-g2-eDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -188,7 +188,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Happiness" id="vex-m9-CO6"/>
+                    <tabBarItem key="tabBarItem" title="Happiness" image="happy.png" id="vex-m9-CO6"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="_chartView" destination="OSv-cU-Hht" id="ZZl-Jm-RwJ"/>
@@ -222,7 +222,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="happy.png" width="25" height="25"/>
+        <image name="monitoring.png" width="25" height="25"/>
+        <image name="more.png" width="25" height="25"/>
         <image name="no-user-image.jpg" width="200" height="200"/>
         <image name="qrcode.png" width="200" height="200"/>
+        <image name="summary.png" width="25" height="25"/>
     </resources>
 </document>
